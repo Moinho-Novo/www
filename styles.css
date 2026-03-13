@@ -1,3 +1,5 @@
+/* Reset */
+
 *,
 *::before,
 *::after {
@@ -5,6 +7,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Theme */
 
 :root {
   --bg: #fafafa;
@@ -30,19 +34,26 @@
   }
 }
 
+/* Base */
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background-color: var(--bg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
   color: var(--text);
   line-height: 1.7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 a {
@@ -56,13 +67,7 @@ a:hover {
   opacity: 0.7;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* --- Header / Nav --- */
+/* Header */
 
 .site-header {
   border-bottom: 1px solid var(--border);
@@ -71,24 +76,21 @@ img {
 
 .header-inner {
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  align-items: center;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: .6rem;
   text-decoration: none;
-  flex-shrink: 0;
 }
 
 .brand-logo {
   height: 40px;
-  width: auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -98,20 +100,19 @@ img {
 }
 
 .brand-name {
-  font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 1.2rem;
 }
 
 .site-nav {
   display: flex;
-  gap: 1.75rem;
+  gap: 1.5rem;
 }
 
 .site-nav a {
   text-decoration: none;
-  font-size: 0.95rem;
-  padding-bottom: 0.15rem;
+  font-size: .95rem;
+  padding-bottom: .15rem;
   border-bottom: 2px solid transparent;
 }
 
@@ -119,61 +120,50 @@ img {
   border-bottom-color: var(--text);
 }
 
-/* --- Main --- */
+/* Layout */
 
 main {
   flex: 1;
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
   padding: 3rem 1.5rem;
-  width: 100%;
 }
 
-/* --- Hero --- */
+/* Hero */
 
 .hero {
   text-align: center;
-  padding: 2rem 0 3rem;
+  padding-bottom: 3rem;
 }
 
 .hero h1 {
-  font-size: 2.75rem;
+  font-size: 2.6rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
-  margin-bottom: 0.75rem;
+  margin-bottom: .6rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
   color: var(--text-muted);
   max-width: 520px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-/* --- Section --- */
+/* Sections */
 
 .section {
   padding: 2rem 0;
 }
 
 .section h2 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.section p {
-  color: var(--text-muted);
-  max-width: 640px;
-}
-
-/* --- Card Grid --- */
+/* Cards */
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 1.25rem;
   margin-top: 1.5rem;
 }
@@ -182,63 +172,44 @@ main {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 1.75rem 1.5rem;
+  padding: 1.7rem;
 }
 
 .card h3 {
   font-size: 1.05rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .card p {
-  font-size: 0.92rem;
+  font-size: .92rem;
   color: var(--text-muted);
-  line-height: 1.6;
 }
 
-/* --- Pricing Cards --- */
+/* Pricing */
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 1.5rem;
-  margin-top: 1.5rem;
 }
 
 .pricing-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 2.25rem 2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
 
-.pricing-card h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.pricing-card .price {
-  font-size: 2.25rem;
+.price {
+  font-size: 2.2rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
-  margin: 0.75rem 0 0.25rem;
 }
 
-.pricing-card .price-note {
-  font-size: 0.85rem;
+.price-note {
+  font-size: .85rem;
   color: var(--text-muted);
-  margin-bottom: 1rem;
-}
-
-.pricing-card p {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  flex: 1;
 }
 
 .btn {
@@ -246,33 +217,12 @@ main {
   background: var(--accent);
   color: var(--accent-text);
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 0.7rem 1.5rem;
+  padding: .65rem 1.4rem;
   border-radius: 6px;
-  margin-top: 1.25rem;
-  align-self: flex-start;
-  transition: opacity 0.15s;
+  margin-top: 1rem;
 }
 
-.btn:hover {
-  opacity: 0.8;
-}
-
-/* --- Contact --- */
-
-.contact-info {
-  margin-bottom: 2rem;
-}
-
-.contact-info p {
-  color: var(--text-muted);
-  margin-bottom: 0.35rem;
-}
-
-.contact-info strong {
-  color: var(--text);
-}
+/* Map */
 
 .map-wrapper {
   border: 1px solid var(--border);
@@ -282,27 +232,24 @@ main {
 }
 
 .map-wrapper iframe {
-  display: block;
   width: 100%;
   height: 420px;
   border: 0;
 }
 
-/* --- About Page --- */
+/* About card */
 
 .about-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 2.25rem 2rem;
+  padding: 2.2rem;
   max-width: 720px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .about-card p {
-  font-size: 0.95rem;
   color: var(--text-muted);
-  line-height: 1.7;
   margin-bottom: 1rem;
 }
 
@@ -310,71 +257,59 @@ main {
   color: var(--text);
 }
 
-.about-card p:last-child {
-  margin-bottom: 0;
-}
-
-/* Nala Photo */
+/* Nala */
 
 .nala-photo {
   text-align: center;
-  margin: 1.75rem 0;
+  margin: 1.6rem 0;
 }
 
 .nala-photo img {
   width: 220px;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .nala-caption {
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
+  font-size: .85rem;
   color: var(--text-muted);
+  margin-top: .4rem;
 }
 
-/* --- Footer --- */
+/* Footer */
 
 .site-footer {
   border-top: 1px solid var(--border);
-  padding: 2rem 1.5rem;
   text-align: center;
-  font-size: 0.85rem;
+  padding: 2rem 1.5rem;
+  font-size: .85rem;
   color: var(--text-muted);
 }
 
-.site-footer p {
-  margin-bottom: 0.25rem;
+/* Mobile */
+
+@media (max-width:768px){
+
+.header-inner{
+flex-direction:column;
+gap:.7rem;
 }
 
-/* --- Responsive --- */
+.site-nav{
+gap:1rem;
+}
 
-@media (max-width: 768px) {
-  .header-inner {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
+.hero h1{
+font-size:2rem;
+}
 
-  .site-nav {
-    gap: 1.25rem;
-  }
+.card-grid{
+grid-template-columns:1fr;
+}
 
-  .hero h1 {
-    font-size: 2rem;
-  }
+.pricing-grid{
+grid-template-columns:1fr;
+}
 
-  .hero p {
-    font-size: 1.05rem;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .pricing-grid {
-    grid-template-columns: 1fr;
-  }
-
-  main {
-    padding: 2rem 1.25rem;
-  }
+main{
+padding:2rem 1.2rem;
 }
