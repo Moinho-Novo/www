@@ -288,6 +288,50 @@ main {
   border: 0;
 }
 
+/* --- About Page --- */
+
+.about-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2.25rem 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-card p strong {
+  color: var(--text);
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Nala Photo */
+
+.nala-photo {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.nala-photo img {
+  width: 260px;
+  border-radius: 12px;
+}
+
+.nala-caption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 /* --- Footer --- */
 
 .site-footer {
