@@ -318,12 +318,12 @@ main {
 
 .nala-photo {
   text-align: center;
-  margin-top: 2rem;
+  margin: 1.75rem 0;
 }
 
 .nala-photo img {
-  width: 260px;
-  border-radius: 12px;
+  width: 220px;
+  border-radius: 14px;
 }
 
 .nala-caption {
