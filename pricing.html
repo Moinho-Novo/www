@@ -28,11 +28,14 @@
     </a>
 
     <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="pricing.html" class="active">Pricing</a>
-      <a href="story.html">About</a>
-      <a href="find-us.html">Find Us</a>
+      <a href="index.html" data-i18n="nav_home"></a>
+      <a href="pricing.html" class="active" data-i18n="nav_pricing"></a>
+      <a href="story.html" data-i18n="nav_about"></a>
+      <a href="find-us.html" data-i18n="nav_find"></a>
     </nav>
+
+    <!-- LANGUAGE TOGGLE -->
+    <button id="lang-toggle">PT</button>
 
   </div>
 </header>
@@ -41,8 +44,8 @@
 <main>
 
 <section class="hero">
-  <h1>Pricing</h1>
-  <p>Choose what works for you.</p>
+  <h1 data-i18n="pricing_title"></h1>
+  <p data-i18n="pricing_subtitle"></p>
 </section>
 
 
@@ -51,36 +54,34 @@
 <div class="pricing-grid">
 
   <div class="pricing-card">
-    <h3>Dedicated Workspace</h3>
-    <p>Your own permanent desk. Set it up once, keep it how you like it and become part of the community. Minimum 3 month commitment.</p>
+    <h3 data-i18n="pricing_1_title"></h3>
+    <p data-i18n="pricing_1_text"></p>
 
     <div class="price">
       €200 <span style="font-size:1rem;font-weight:400;">/mo</span>
     </div>
 
-    <p class="price-note">Including VAT</p>
+    <p class="price-note" data-i18n="pricing_vat"></p>
   </div>
 
 
   <div class="pricing-card">
-    <h3>Daily</h3>
-    <p>Need a desk for the day to break up the week at home? Book a desk at reception.</p>
+    <h3 data-i18n="pricing_2_title"></h3>
+    <p data-i18n="pricing_2_text"></p>
 
     <div class="price">
       €12 <span style="font-size:1rem;font-weight:400;">/day</span>
     </div>
 
-    <p class="price-note">Including VAT</p>
+    <p class="price-note" data-i18n="pricing_vat"></p>
   </div>
 
 
   <div class="pricing-card">
-    <h3>Hourly</h3>
-    <p>Need a desk for a few hours? Book your desk with our partner Croissant and pay only for the time you use.</p>
+    <h3 data-i18n="pricing_3_title"></h3>
+    <p data-i18n="pricing_3_text"></p>
 
-    <a href="https://getcroissant.com" class="btn" target="_blank" rel="noopener">
-      Book on Croissant
-    </a>
+    <a href="https://getcroissant.com" class="btn" target="_blank" rel="noopener" data-i18n="pricing_cta"></a>
   </div>
 
 </div>
@@ -91,9 +92,13 @@
 
 
 <footer class="site-footer">
-  <p>R. Heliodoro Salgado 59B, 2830-335 Barreiro, Portugal</p>
+  <p data-i18n="footer_address"></p>
   <p>moinho-novo.com</p>
 </footer>
+
+<!-- SCRIPTS -->
+<script src="/js/translations.js"></script>
+<script src="/js/lang.js"></script>
 
 </body>
 </html>
