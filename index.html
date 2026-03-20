@@ -28,11 +28,14 @@
     </a>
 
     <nav class="site-nav">
-  <a href="index.html">Home</a>
-  <a href="pricing.html">Pricing</a>
-  <a href="story.html">About</a>
-  <a href="find-us.html">Find Us</a>
-</nav>
+      <a href="index.html" data-i18n="nav_home"></a>
+      <a href="pricing.html" data-i18n="nav_pricing"></a>
+      <a href="story.html" data-i18n="nav_about"></a>
+      <a href="find-us.html" data-i18n="nav_find"></a>
+    </nav>
+
+    <!-- LANGUAGE TOGGLE -->
+    <button id="lang-toggle">PT</button>
 
   </div>
 </header>
@@ -41,63 +44,50 @@
 <main>
 
 <section class="hero">
-  <h1>Work remotely. Belong locally.</h1>
+  <h1 data-i18n="home_title"></h1>
 
-  <p>
-    A coworking space in Barreiro for remote workers who want a dedicated place to work — and a real connection to the town they live in.
-  </p>
+  <p data-i18n="home_subtitle"></p>
 </section>
 
 
 <section class="section">
 
-<h2>Why Moinho Novo</h2>
+<h2 data-i18n="why_title"></h2>
 
 <div class="card-grid">
 
 <div class="card">
-<h3>Dedicated workspace</h3>
-<p>
-Your own permanent desk, ready when you are. Set it up once, keep it how you like it, and become part of the community.
-</p>
+<h3 data-i18n="why_1_title"></h3>
+<p data-i18n="why_1_text"></p>
 </div>
 
 
 <div class="card">
-<h3>Flexible access</h3>
-<p>
-Use the space daily or book by the hour through our partner. Drop in when you need a productive place to work.
-</p>
+<h3 data-i18n="why_2_title"></h3>
+<p data-i18n="why_2_text"></p>
 </div>
 
 
 <div class="card">
-<h3>Great location</h3>
-<p>
-20 minutes from Lisbon by ferry. A 15-minute walk from the terminal, next to parks and supermarkets.
-</p>
+<h3 data-i18n="why_3_title"></h3>
+<p data-i18n="why_3_text"></p>
 </div>
 
 
 <div class="card">
-<h3>Phone booths</h3>
-<p>
-All work calls happen in the booths so the main workspace stays quiet and focused for everyone.
-</p>
+<h3 data-i18n="why_4_title"></h3>
+<p data-i18n="why_4_text"></p>
 </div>
+
 <div class="card">
-<h3>Dog friendly</h3>
-<p>
-Our Chief Welcome Officer, Nala, is always around for cuddles. Your furry friend is welcome too.
-</p>
+<h3 data-i18n="why_5_title"></h3>
+<p data-i18n="why_5_text"></p>
 </div>
 
 
 <div class="card">
-<h3>Tea, coffee and microwave</h3>
-<p>
-Help yourself to tea and coffee, bring your lunch or grab a barista-made coffee while you work.
-</p>
+<h3 data-i18n="why_6_title"></h3>
+<p data-i18n="why_6_text"></p>
 </div>
 
 
@@ -108,9 +98,13 @@ Help yourself to tea and coffee, bring your lunch or grab a barista-made coffee 
 
 
 <footer class="site-footer">
-<p>Rua Heliodoro Salgado 59B, 2830-335 Barreiro, Portugal</p>
+<p data-i18n="footer_address"></p>
 <p>moinho-novo.com</p>
 </footer>
+
+<!-- SCRIPTS (we’ll activate later) -->
+<script src="/js/translations.js"></script>
+<script src="/js/lang.js"></script>
 
 </body>
 </html>
