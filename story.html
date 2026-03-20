@@ -23,11 +23,14 @@
     </a>
 
     <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="story.html" class="active">About</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="find-us.html">Find Us</a>
+      <a href="index.html" data-i18n="nav_home"></a>
+      <a href="story.html" class="active" data-i18n="nav_about"></a>
+      <a href="pricing.html" data-i18n="nav_pricing"></a>
+      <a href="find-us.html" data-i18n="nav_find"></a>
     </nav>
+
+    <!-- LANGUAGE TOGGLE -->
+    <button id="lang-toggle">PT</button>
 
   </div>
 </header>
@@ -38,27 +41,19 @@
 
   <div class="about-card">
 
-    <p>
-      Hey 👋 We're John and Beth from the UK. Moinho Novo started with a simple idea: remote work shouldn’t mean working alone. After moving to Barreiro and working remotely ourselves, we realised how easy it is to feel disconnected from the place you live when most of the day happens behind a screen.
-    </p>
+    <p data-i18n="about_1"></p>
 
-    <p>
-      So we created Moinho Novo — a welcoming workspace where remote workers can focus during the day while naturally meeting people and becoming part of the community in Barreiro.
-    </p>
+    <p data-i18n="about_2"></p>
 
-    <p>
-      Barreiro has a proud industrial past and was once one of Portugal’s most important factory towns. The name Moinho Novo reflects that history while looking forward to a new way of working. Our logo is inspired by the pavement pattern on Avenida Alfredo da Silva, one of the town’s most historic streets.
-    </p>
+    <p data-i18n="about_3"></p>
 
-    <p>
-      You’ll probably also meet our Chief Welcome Officer, Nala — a Portuguese rescue dog who now specialises in greeting people and supervising the workspace.
-    </p>
+    <p data-i18n="about_4"></p>
 
     <div class="nala-photo">
-      <img src="nala.jpg" alt=">
+      <img src="nala.jpg" alt="Nala the dog">
     </div>
 
-    <p>Drop by — we're excited to meet you.</p>
+    <p data-i18n="about_5"></p>
 
   </div>
 
@@ -67,9 +62,13 @@
 </main>
 
 <footer class="site-footer">
-  <p></p>
+  <p data-i18n="footer_address"></p>
   <p>© 2026 Moinho Novo</p>
 </footer>
+
+<!-- SCRIPTS -->
+<script src="/js/translations.js"></script>
+<script src="/js/lang.js"></script>
 
 </body>
 </html>
