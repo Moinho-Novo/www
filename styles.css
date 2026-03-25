@@ -289,51 +289,53 @@ main {
 
 @media (max-width:768px){
 
-.header-inner{
-flex-direction:column;
-gap:.7rem;
-}
+  .header-inner{
+    flex-direction:column;
+    gap:.7rem;
+  }
 
-.site-nav{
-gap:1rem;
-}
+  .site-nav{
+    gap:1rem;
+  }
 
-.hero h1{
-font-size:2rem;
-}
+  .hero h1{
+    font-size:2rem;
+  }
 
-.card-grid{
-grid-template-columns:1fr;
-}
+  .card-grid{
+    grid-template-columns:1fr;
+  }
 
-.pricing-grid{
-grid-template-columns:1fr;
-}
+  .pricing_grid{
+    grid-template-columns:1fr;
+  }
 
-main{
-padding:2rem 1.2rem;
-}
+  main{
+    padding:2rem 1.2rem;
+  }
 
-/* Fix HubSpot form text color */
-.founding-form .hs-form,
-.founding-form .hs-form label,
-.founding-form .hs-form input,
-.founding-form .hs-form textarea,
-.founding-form .hs-form select,
-.founding-form .hs-form p {
-  color: #000 !important;
-}
+  /* Fix HubSpot form text color */
+  .founding-form .hs-form,
+  .founding-form .hs-form label,
+  .founding-form .hs-form input,
+  .founding-form .hs-form textarea,
+  .founding-form .hs-form select,
+  .founding-form .hs-form p {
+    color: #000 !important;
+  }
 
-/* Ensure input text is black */
-.founding-form .hs-form input,
-.founding-form .hs-form textarea,
-.founding-form .hs-form select {
-  color: #000 !important;
-  background-color: #fff; /* optional but recommended */
-}
+  /* Ensure input text is black */
+  .founding-form .hs-form input,
+  .founding-form .hs-form textarea,
+  .founding-form .hs-form select {
+    color: #000 !important;
+    background-color: #fff;
+  }
 
-/* Fix placeholder text (mobile often keeps it light) */
-.founding-form .hs-form input::placeholder,
-.founding-form .hs-form textarea::placeholder {
-  color: #666 !important;
+  /* Fix placeholder text */
+  .founding-form .hs-form input::placeholder,
+  .founding-form .hs-form textarea::placeholder {
+    color: #666 !important;
+  }
+
 }
