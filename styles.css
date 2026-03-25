@@ -272,49 +272,32 @@ main {
   color: var(--text-muted);
 }
 
-/* Mobile */
+/* Mobile layout adjustments */
 @media (max-width:768px){
-
-  .header-inner{
-    flex-direction:column;
-    gap:.7rem;
-  }
-
-  .site-nav{
-    gap:1rem;
+  main{
+    padding: 2rem 1.2rem;
   }
 
   .hero h1{
-    font-size:2rem;
+    font-size: 2rem;
   }
 
-  .card-grid{
-    grid-template-columns:1fr;
-  }
-
+  .card-grid,
   .pricing-grid{
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
   }
 
-  main{
-    padding:2rem 1.2rem;
+  .header-inner{
+    flex-direction: column;
+    gap: .7rem;
   }
 
-  /* HubSpot form mobile fix: force white background and dark text */
-  .founding-form .hs-form input,
-  .founding-form .hs-form textarea,
-  .founding-form .hs-form select {
-    background-color: #ffffff !important;
-    color: #2a2a2a !important;
-  }
-
-  .founding-form .hs-form input::placeholder,
-  .founding-form .hs-form textarea::placeholder {
-    color: #666666 !important;
+  .site-nav{
+    gap: 1rem;
   }
 }
 
-/* HubSpot Form general fix (desktop & dark mode) */
+/* HubSpot Form: Desktop + Mobile (identical styling) */
 .founding-form .hs-form * {
   color: var(--text) !important;
 }
@@ -325,6 +308,13 @@ main {
   background-color: var(--bg-alt) !important;
   color: var(--text) !important;
   border: 1px solid var(--border) !important;
+  padding: 0.65rem 1.4rem !important;
+  border-radius: 6px !important;
+  width: 100% !important;
+}
+
+.founding-form .hs-form .hs-form-field {
+  margin-bottom: 1rem !important; /* mobile-friendly spacing */
 }
 
 .founding-form .hs-form input::placeholder,
