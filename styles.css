@@ -1,5 +1,4 @@
 /* Reset */
-
 *,
 *::before,
 *::after {
@@ -9,7 +8,6 @@
 }
 
 /* Theme */
-
 :root {
   --bg: #fafafa;
   --bg-alt: #f0f0f0;
@@ -35,7 +33,6 @@
 }
 
 /* Base */
-
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -68,7 +65,6 @@ a:hover {
 }
 
 /* Header */
-
 .site-header {
   border-bottom: 1px solid var(--border);
   padding: 1rem 1.5rem;
@@ -121,7 +117,6 @@ a:hover {
 }
 
 /* Layout */
-
 main {
   flex: 1;
   max-width: 900px;
@@ -130,7 +125,6 @@ main {
 }
 
 /* Hero */
-
 .hero {
   text-align: center;
   padding-bottom: 3rem;
@@ -149,7 +143,6 @@ main {
 }
 
 /* Sections */
-
 .section {
   padding: 2rem 0;
 }
@@ -160,7 +153,6 @@ main {
 }
 
 /* Cards */
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -186,7 +178,6 @@ main {
 }
 
 /* Pricing */
-
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -223,7 +214,6 @@ main {
 }
 
 /* Map */
-
 .map-wrapper {
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -238,7 +228,6 @@ main {
 }
 
 /* About card */
-
 .about-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -258,7 +247,6 @@ main {
 }
 
 /* Nala */
-
 .nala-photo {
   text-align: center;
   margin: 1.6rem 0;
@@ -276,7 +264,6 @@ main {
 }
 
 /* Footer */
-
 .site-footer {
   border-top: 1px solid var(--border);
   text-align: center;
@@ -286,7 +273,6 @@ main {
 }
 
 /* Mobile */
-
 @media (max-width:768px){
 
   .header-inner{
@@ -306,7 +292,7 @@ main {
     grid-template-columns:1fr;
   }
 
-  .pricing_grid{
+  .pricing-grid{
     grid-template-columns:1fr;
   }
 
@@ -314,28 +300,22 @@ main {
     padding:2rem 1.2rem;
   }
 
-  /* Fix HubSpot form text color */
-  .founding-form .hs-form,
-  .founding-form .hs-form label,
-  .founding-form .hs-form input,
-  .founding-form .hs-form textarea,
-  .founding-form .hs-form select,
-  .founding-form .hs-form p {
-    color: #000 !important;
-  }
+}
 
-  /* Ensure input text is black */
-  .founding-form .hs-form input,
-  .founding-form .hs-form textarea,
-  .founding-form .hs-form select {
-    color: #000 !important;
-    background-color: #fff;
-  }
+/* HubSpot Form Fix (works on all screen sizes) */
+.founding-form .hs-form * {
+  color: var(--text) !important;
+}
 
-  /* Fix placeholder text */
-  .founding-form .hs-form input::placeholder,
-  .founding-form .hs-form textarea::placeholder {
-    color: #666 !important;
-  }
+.founding-form .hs-form input,
+.founding-form .hs-form textarea,
+.founding-form .hs-form select {
+  background-color: var(--bg-alt) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
 
+.founding-form .hs-form input::placeholder,
+.founding-form .hs-form textarea::placeholder {
+  color: var(--text-muted) !important;
 }
