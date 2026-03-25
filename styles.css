@@ -300,9 +300,21 @@ main {
     padding:2rem 1.2rem;
   }
 
+  /* HubSpot form mobile fix: force white background and dark text */
+  .founding-form .hs-form input,
+  .founding-form .hs-form textarea,
+  .founding-form .hs-form select {
+    background-color: #ffffff !important;
+    color: #2a2a2a !important;
+  }
+
+  .founding-form .hs-form input::placeholder,
+  .founding-form .hs-form textarea::placeholder {
+    color: #666666 !important;
+  }
 }
 
-/* HubSpot Form Fix (works on all screen sizes) */
+/* HubSpot Form general fix (desktop & dark mode) */
 .founding-form .hs-form * {
   color: var(--text) !important;
 }
